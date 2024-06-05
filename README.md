@@ -10,6 +10,8 @@ Authors: Aaron Defazio, Xingyu (Alice) Yang, Harsh Mehta, Konstantin Mishchenko,
 
 This code provides `AdamWScheduleFree` optimizer as a replacement for AdamW that does not require learning rate scheduling. It closely tracks the Pareto frontier of loss of cosine scheduled AdamW for any number of steps `t` , but does not require the `t` parameter do be set in advance of training.
 
+`MNIST_test.ipynb` compares Adam and Schedule-Free Adam training results on MNIST dataset
+
 ## Algorithm
 In Schedule-Free AdamW, first order momentum is replaced with combination of interpolation and averaging:
 
