@@ -18,7 +18,7 @@ In Schedule-Free AdamW, first order momentum is replaced with combination of int
 $$
 \begin{align*}
 y_{t} & = (1-\beta)z_{t} + \beta x_{t},\\
-z_{t+1} & =z_{t}-\gamma\nabla f(y_{t}),\\
+z_{t+1} & =z_{t}-\gamma(\frac{\nabla f(y_{t})}{\sqrt{v_{t+1}}+\epsilon}+\lambda y_{t}),\\
 x_{t+1} & =\left(1-\frac{1}{t+1}\right)x_{t}+\frac{1}{t+1}z_{t+1},
 \end{align*}
 $$
