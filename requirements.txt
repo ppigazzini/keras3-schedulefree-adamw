@@ -1,1 +1,7 @@
-tensorflow >= 2.0.0
+keras
+jax[cuda12]
+#tensorflow[and-cuda]
+#torch
+numpy
+jupyterlab
+ipywidgets
